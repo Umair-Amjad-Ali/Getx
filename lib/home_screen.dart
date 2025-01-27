@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get_x/gender_icon.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
