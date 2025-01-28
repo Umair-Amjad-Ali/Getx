@@ -43,6 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
               },
             ),
           ),
+          //  Theme Mode Switch
           Card(
             child: ListTile(
               title: const Text("Theme Mode Switch"),
@@ -52,15 +53,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Get.isDarkMode
-                          ? Colors.black
-                          : Colors.white, // Dynamic background
+                      color: Get.isDarkMode ? Colors.black : Colors.white,
                       borderRadius:
                           const BorderRadius.vertical(top: Radius.circular(16)),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
+                        // Light Mode
                         ListTile(
                           onTap: () {
                             Get.changeThemeMode(ThemeMode.light);
@@ -73,9 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(
                                 color: Get.isDarkMode
                                     ? Colors.white
-                                    : Colors.black), // Dynamic text color
+                                    : Colors.black),
                           ),
                         ),
+                        // Dark Mode
                         ListTile(
                           onTap: () {
                             Get.changeThemeMode(ThemeMode.dark);
