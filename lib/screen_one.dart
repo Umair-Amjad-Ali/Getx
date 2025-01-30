@@ -12,17 +12,17 @@ class ScreenOne extends StatefulWidget {
 class _ScreenOneState extends State<ScreenOne> {
   int x = 2;
 
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
+  // @override
+  // void initState() {
+  //   // TODO: implement initState
+  //   super.initState();
 
-    Timer.periodic(Duration(seconds: 1), (timer) {
-      setState(() {
-        x++;
-      });
-    });
-  }
+  //   Timer.periodic(Duration(seconds: 1), (timer) {
+  //     setState(() {
+  //       x++;
+  //     });
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
