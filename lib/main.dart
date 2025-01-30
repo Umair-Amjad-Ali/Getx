@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import 'package:get_x/utilities/screen_three.dart';
+import 'package:get_x/examples_three.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light(), // Default light theme
       darkTheme: ThemeData.dark(), // Dark theme
       themeMode: ThemeMode.system, // System default theme
-      home: const ScreenThree(),
+      home: const ExamplesThree(),
     );
   }
 }
